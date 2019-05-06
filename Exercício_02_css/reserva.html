@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Reserva</title>
+</head>
+
+
+<body>
+
+    <!-- Aqui fica o cabeçalho com o nome do hotel.-->
+    <header>
+        <h1>Hotel Luar do Sertão</h1>
+    </header>
+
+    <!-- Aqui é o navigation bar onde pode direcionar para outras páginas do site do hotel.-->
+    <nav>
+        <ul>
+            <li class="dropdown">
+                <a href="principal.html">Página Principal</a>
+                <div class="dropdown-content">
+                    <a href="#santuario">Santuário</a>
+                    <a href="#paroquia">Paróquia da cidade</a>
+                    <a href="#cedro">Cedro</a>
+                    <a href="#serra">Serra do Estevão</a>
+                    <a href="#asadelta">Voo Duplo de Asa Delta</a>
+                </div>
+            </li>
+
+            <li class="dropdown">
+                <a href="hotel.html">Hotel</a>
+                <div class="dropdown-content">
+                    <a href="#externa">Área Externa</a>
+                    <a href="#lazer">Área de Lazer</a>
+                    <a href="#piscina">Piscina</a>
+                    <a href="#jogos">Salão de Jogos</a>
+                    <a href="#auditorio">Auditório</a>
+                    <a href="#restaurante">Restaurante</a>
+                </div>
+            </li>
+
+            <li class="dropdown">
+                <a href="quartos.html">Quartos</a>
+                <div class="dropdown-content">
+                    <a href="#">Luxo</a>
+                    <a href="#">Premium</a>
+                    <a href="#">Presidencial</a>
+                </div>
+            </li>
+
+            <li class="dropdown">
+                <a href="#">Contato</a>
+                <div class="dropdown-content">
+                    <a href="#">Email</a>
+                    <a href="#">Telefone</a>
+                </div>
+            </li>
+
+            <li>
+                <a href="reserva.html">Solicitar Reserva</a>
+            </li>
+
+            <li style="float: right">
+                <a href="#">Login</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Aqui fica a parte central da página html, é onde ficam os textos e imagens.-->
+    <div class="row">
+        <div>
+            <form action="demo_form.asp">
+                <fieldset>
+                    <div>
+                        <div>
+                            <h3>Nome: </h3>
+                            <input type="text" name="Nome"><br>
+                            <h3>CPF: </h3>
+                            <input type="text" name="CPF"><br>
+                            <h3>Estado:</h3>
+                            <input type="text" name="Idade"><br>
+                            <h3>Email: </h3>
+                            <input type="text" name="Email"><br>
+                            <h3>Telefone: </h3>
+                            <input type="text" name="Numero"><br>
+                        </div>
+                        <div class="column">
+                            <h3>Data de Entrada: </h3>
+                            <input type="text" name="Entrada"><br>
+                            <h3>Data de Saída: </h3>
+                            <input type="text" name="Saída"><br>
+                        </div>
+                        <div>
+                            <h3>Quantidade de Pessoas</h3>
+                            <input type="radio" name="quantidade" value="1 pessoa">
+                            <font color="black"> 1 pessoa </font>
+                            <input type="radio" name="quantidade" value="quantidade">
+                            <font color="black">2 pessoas </font><br>
+                            <input type="radio" name="quantidade" value="1 pessoa">
+                            <font color="black"> 3 pessoas </font>
+                            <input type="radio" name="quantidade" value="quantidade">
+                            <font color="black">4 pessoas </font><br>
+                        </div>
+                        <div class="column">
+                            <h3>Sexo</h3>
+                            <input type="radio" name="Sexo" value="Masculino">
+                            <font color="black"> Masculino </font>
+                            <input type="radio" name="Sexo" value="Feminino">
+                            <font color="black"> Feminino </font><br>
+                        </div>
+                        <div>
+                            <h3>Forma de Pagamento</h3>
+                            <input type="radio" name="pagamento" value="Pagamento">
+                            <font color="black"> Cartão de Crédito </font>
+
+                            <input type="radio" name="pagamento" value="Pagamento">
+                            <font color="black"> Cartão de Débito </font><br>
+
+                            <input type="radio" name="pagamento" value="Pagamento">
+                            <font color="black"> Dinheiro (Boleto)<br>
+                        </div>
+
+                        <h3>Mensagem:</h3> <textarea name="Mensagem" style="resize: none;" rows="8"
+                            cols="50"></textarea>
+                        <br><br>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" name="Limpar Dados">
+                    </div>
+                </fieldset>
+            </form><br>
+        </div>
+    </div>
+
+    <!-- Aqui fica o rodapé com os links para redes sociais (facebook, instagram, twitter),
+            endereço do hotel, telefone para contato e email.
+        -->
+    <footer class="rodape">
+        <div class="rodape-esquerdo">
+            <h3>Hotel Luar do <span>Sertão</span></h3>
+
+            <p class="rodape-links">
+                <a href="#">Página Inicial</a>
+                ·
+                <a href="#">Preços</a>
+                ·
+                <a href="#">Sobre</a>
+                ·
+                <a href="#">Contato</a>
+            </p>
+
+            <p class="rodape-nome-companhia">Hotel Luar do Sertão &copy; 2019</p>
+        </div>
+
+        <div class="rodape-central">
+
+            <div>
+                <i class="endereco"></i>
+                <img src="imgs/localizacao.svg" width="30px">
+                |
+                <p><span>21 Avenida do Cheirinho</span> Quixadá, Ceará</p>
+            </div>
+
+            <div>
+                <i class="telefone"></i>
+                <img src="imgs/telefone.svg" width="30px">
+                |
+                <p>(085) 94002-8922</p>
+            </div>
+
+            <div>
+                <i class="email"></i>
+                <img src="imgs/email.svg" width="30px">
+                |
+                <p><a href="https://mail.google.com">support@hotelluardosertao.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="rodape-direito">
+
+            <p class="rodape-sobre">
+                <span>Sobre Hotel Luar do Sertão</span>
+                Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus
+                vehicula sit amet.
+            </p>
+
+            <div class="rodape-icones">
+
+                <a href="https://facebook.com"><img class="rede-social" src="imgs/facebook.svg"></a>
+                <a href="https://twitter.com"><img class="rede-social" src="imgs/twitter.svg"></a>
+                <a href="https://instagram.com"><img class="rede-social" src="imgs/instagram.svg"></a>
+
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>

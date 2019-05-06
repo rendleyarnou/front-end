@@ -1,0 +1,276 @@
+/* 
+    ************** Estilizaçã do cabeçalho**************
+*/
+
+header {
+    background-color: #292c2f;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 5.6px;
+    text-indent: 5.6px;
+    font-family: Arial, sans-serif;
+    font-weight: 300;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0 -1px 2px #030000;
+    white-space: normal;
+}
+
+/* 
+    ************** Estilizaçã da UL (navigation bar) **************
+*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 15px 50px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: darkcyan;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*
+    ************** Estilização das colunas **************
+*/
+
+.row {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+    text-align: center;
+}
+
+.row .div-text {
+    text-align: justify;
+    padding: 2%;
+}
+
+.row .column {
+    float: left;
+    width:50%;
+    text-align: center;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.coluna-esquerda {
+    float: left;
+    width: 50%;
+}
+
+.coluna-direita {
+    float: left;
+    width: 50%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
+                                                inicio  rodape 
+   /////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
+*/
+
+.rodape {
+    background-color: #292c2f;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 55px 50px;
+    margin-top: 80px;
+}
+
+.rodape .rodape-esquerdo, .rodape .rodape-central, .rodape .rodape-direito {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/*
+   ************** Estilização do rodape esquerdo **************
+*/
+
+.rodape .rodape-esquerdo {
+    width: 40%;
+}
+
+/* logo da companhia */
+
+.rodape h3 {
+    color: peru;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+}
+
+.rodape h3 span {
+    color: yellow;
+}
+
+/* rodape links */
+
+.rodape .rodape-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+}
+
+.rodape .rodape-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.rodape .rodape-nome-companhia {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/*
+   ************** Estilização do rodape central **************
+*/
+
+.rodape .rodape-central {
+    width: 35%;
+}
+
+.rodape .rodape-central i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.rodape .rodape-central i.email {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.rodape .rodape-central p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.rodape .rodape-central p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.rodape .rodape-central p a {
+    color: #5383d3;
+    text-decoration: none;
+}
+
+/*
+   ************** Estilização do rodape direito **************
+*/
+
+.rodape .rodape-direito {
+    width: 20%;
+}
+
+.rodape .rodape-sobre {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.rodape .rodape-sobre span {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.rodape .rodape-icones {
+    margin-top: 25px;
+}
+
+.rodape .rodape-icones a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+.rodape .rodape-direito .rodape-icones .rede-social {
+    width: 35px;
+    height: 35px;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
+                                                    fim rodape 
+   /////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
+*/
